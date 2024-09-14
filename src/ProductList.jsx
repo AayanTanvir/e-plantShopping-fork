@@ -252,7 +252,7 @@ const handlePlantsClick = (e) => {
   };
 
 const handleAddToCart = (product) => {
-    dispatch(addedToCart(product));
+    dispatch(addItem(product));
     setAddedToCart((prevState) => ({
         ...prevState,
         [product.name]: true,
