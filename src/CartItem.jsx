@@ -5,13 +5,13 @@ import { removeItem, updateQuantity } from './CartSlice';
 
 
 const CartItem = ({ onContinueShopping, setAddedToCart }) => {
-  const cart = useSelector(state => state.cart.items);
+  const cartItems = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
 
 
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
-    return cart.reduce((total, item) => total + item.quantity * item.cost, 0);
+    return cartItems.reduce((total, item) => total + item.quantity * item.cost, 0);
   };
 
   const handleCheckoutShopping = (e) => {
