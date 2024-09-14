@@ -27,6 +27,10 @@ const CartItem = ({ onContinueShopping, setAddedToCart }) => {
         dispatch(updateQuantity({name: item.name, quantity: item.quantity - 1}));
    } else if(item.quantity === 1){
         dispatch(removeItem(item.name));
+        setAddedToCart((prevState) => ({
+          ...prevState,
+          [item.name]: false,
+        }))
    }
   };
 
