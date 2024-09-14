@@ -1,4 +1,5 @@
 import React from 'react';
+import './CartItem.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { removeItem, updateQuantity } from './CartSlice';
 
