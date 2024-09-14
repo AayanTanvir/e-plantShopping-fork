@@ -5,11 +5,12 @@ import './App.css';
 import AboutUs from './AboutUs';
 
 function App() {
-    console.log("app is rendered");
   const [showProductList, setShowProductList] = useState(false);
+  console.log("handle get started clicked");
 
   const handleGetStartedClick = () => {
     setShowProductList(true);
+
   };
 
   return (
