@@ -5,7 +5,7 @@ import './App.css';
 import AboutUs from './AboutUs';
 
 function App() {
-  
+    console.log("app is rendered");
   const [showProductList, setShowProductList] = useState(false);
 
   const handleGetStartedClick = () => {
