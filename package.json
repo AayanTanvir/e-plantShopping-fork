@@ -2,6 +2,7 @@
   "name": "shoppingcart",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://AayanTanvir.github.io/e-plantShopping-fork",
   "type": "module",
   "scripts": {
     "dev": "vite",
